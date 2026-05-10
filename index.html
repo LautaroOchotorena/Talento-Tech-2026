@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cause:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>Tienda eco-friendly <i class="fa-solid fa-seedling" style="color: rgb(9, 122, 54);"></i></h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#Productos">Productos</a></li>
+                <li><a href="#Reseñas">Reseñas</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Productos</h2>
+        <section id="Productos">
+            <div class="product">
+                <img src="img/cepillo-dental-colgate-bamboo-single.jpg" alt="Cepillo Dental Colgate Bamboo">
+                <h3>Cepillo Dental Colgate Bamboo</h3>
+                <p>Hecho de materiales biodegradables</p>
+            </div>
+            <div class="product">
+                <img src="img/pajitas_acero.jpg" alt="Pajitas reutilizables de acero">
+                <h3>Pajitas reutilizables de acero</h3>
+                <p>Set de pajitas de acero + limpiador</p>
+            </div>
+            <div class="product">
+                <img src="img/esponja_vegetal.webp" alt="Esponja vegetal">
+                <h3>Esponja vegetal</h3>
+                <p>Hecha de Luffa para el lavado</p>
+            </div>
+            <div class="product">
+                <img src="img/paños.jpg" alt="Paños reutilizables">
+                <h3>Paños reutilizables</h3>
+                <p>Pack de 5 paños reutilizables</p>
+            </div>
+            <div class="product">
+                <img src="img/billetera.jpg" alt="Billetera reciclada">
+                <h3>Billetera reciclada</h3>
+                <p>Hechas con bolsas plásticas recicladas </p>
+            </div>
+            <div class="product">
+                <img src="img/eco_bags.webp" alt="Eco bags">
+                <h3>Eco bags</h3>
+                <p>Bolsas ecológicas de lienzo para tus compras</p>
+            </div>
+        </section>
+        <h2>Reseñas</h2>
+        <section id="Reseñas">
+            <div class="review-card">
+                <h3>Juan Pérez</h3>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>Muy buenos productos y buena atención</p>
+            </div>
+
+            <div class="review-card">
+                <h3>Solange</h3>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>Recomendado para comprar</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section id="Contacto">
+            <h2>Contacto</h2>
+            <p class="contact-items">
+                <i class="fa-solid fa-phone"></i>
+                +54 9 11 1234-5678
+            </p>
+            <p class="contact-items">
+                <i class="fa-solid fa-envelope"></i>
+                ejemplo@gmail.com
+            </p>
+            <p class="contact-items">
+                <i class="fa-solid fa-location-crosshairs"></i>
+                Malabia 2242, Buenos Aires, Argentina
+            </p>
+            <div id="mapa-container", class="contact-items">
+                <iframe id="mapa" src="https://maps.google.com/maps?&amp;q=-34.58658422704075,%20-58.42117309570313&amp;output=embed"></iframe>
+            </div>
+            <h2>Formulario de contacto</h2>
+            <form class='formulario' action="https://formspree.io/f/xgodzqbk", method="POST">
+                <label>Nombre:</label>
+                <input type="text" placeholder="Nombre" required>
+                <label>Correo:</label>
+                <input name="email" type="email" placeholder="Correo" required>
+                <label>Mensaje:</label>
+                <textarea name="message" placeholder="Mensaje" required></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </footer>
+</body>
+</html>
