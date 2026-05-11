@@ -4,12 +4,16 @@
     font-family: 'Cause', sans-serif;   
 }
 
-
 body{
     color: #cbac88;
 }
 
-header h1{
+main {
+    margin: 0;
+    padding: 0;
+}
+
+#header-title{
     text-align: center;
     margin: 20px 0;
     color:black
@@ -37,12 +41,12 @@ nav a{
     font-size: 80%;
 }
 
-h1, h2{
+.title{
     text-align: center;
     margin: 20px 0;
 }
 
-section#Productos, section#Reseñas{
+.product-container, .review-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 20%;
@@ -91,31 +95,37 @@ section#Productos, section#Reseñas{
 form{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 10px;
     gap: 10px;
+    margin: 0 35vw 0 35vw;
 }
 
-form label{
+.label{
     justify-self: end;
     gap: 5px;
 }
 
-form textarea{
+.textarea{
     padding: 5px;
     border: 1px solid #ccc;
-    width: 40%;
     height: 100px;
 }
 
-form input{
+.input{
     padding: 5px;
     border: 1px solid #ccc;
-    width: 20%;
+    width: max(100%, 200px);
 }
 
-form input[type="submit"]{
+.input[type="submit"]{
     grid-column: 1 / -1; /* el "/ -1  necesario para  que haya sólo una columna */
     justify-self: center;
+    width: auto;
+}
+
+.input[type="submit"]:hover{
+    background-color: #394648;
+    color: #cbac88;
+    cursor: pointer;
 }
 
 #mapa{
