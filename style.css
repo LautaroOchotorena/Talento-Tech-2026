@@ -95,16 +95,14 @@ nav a{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.contact-items{
-    display: flex;
-    align-items: center;
     gap: 5px;
-    margin-top: 15px;
+    margin-bottom: 15px;
     font-size: 15px;
 }
 
+#mapa-container{
+    margin-bottom: 0;
+}
 form{
     display: grid;
     grid-template-columns: 1fr 1fr;
