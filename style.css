@@ -5,7 +5,7 @@
 }
 
 body{
-    color: #cbac88;
+    color: #3b362f;
 }
 
 main {
@@ -14,8 +14,14 @@ main {
 }
 
 #header-title{
+    padding: 20px 0;
+}
+
+.header-container{
+    background-image: url('img/eco_banner.png');
+    background-size: cover;
+    background-position: center;
     text-align: center;
-    margin: 20px 0;
     color:black
 }
 
@@ -43,7 +49,13 @@ nav a{
 
 .title{
     text-align: center;
-    margin: 20px 0;
+    padding: 20px 0;
+}
+
+.main-container{
+    background-image: url(img/fondo_productos.png);
+    background-size: cover;
+    background-position: center;
 }
 
 .product-container, .review-container{
@@ -51,13 +63,14 @@ nav a{
     grid-template-columns: 1fr 1fr;
     height: 20%;
     margin: 20px 10% 0px 10%;
+    padding-bottom: 30px;
 }
 
 .product{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
     gap: 5px;
 }
 
@@ -147,5 +160,9 @@ section#Contacto{
     }
     form{
         margin: 0 15vw 0 15vw;
+    }
+
+    .product{
+        padding: 10px;
     }
 }
